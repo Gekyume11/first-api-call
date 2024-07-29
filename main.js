@@ -1,0 +1,2 @@
+alert("Product Cards made through JS API fetch method, click ok to continue !"),fetch("https://fakestoreapi.com/products").then(s=>s.json()).then(s=>{s.map(s=>{let{id:c,title:e,price:i,description:t,category:d,image:o,rating:a}=s;document.querySelector("section").innerHTML+=`<div class="card">
+<div class="cover"><img loading="lazy" src="${o}"></div><div class="line"></div><div class="info px-5"><h1>${e}</h1><b>${i}</b><p class="desc">${t}</p><p>Category : <span>${d}</span></p></div></div>`})});
